@@ -27,7 +27,7 @@ function transformHtml(mode) {
     </script>
     <script type="module" src="http://localhost:3000/@vite/client"></script>
     <script type="module" src="http://localhost:3000/src/index.tsx"></script>`;
-      const prod = `<script type="module" src="/src/index.tsx"></script>`;
+      const prod = `<script type="module" src="/src/index.ts"></script>`;
 
       return html.replace('<div id="mode"></div>', mode === 'development' ? dev : prod);
     },

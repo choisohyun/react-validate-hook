@@ -15,12 +15,12 @@
     "module": "es2020",
     "moduleResolution": "node",
     "baseUrl": "./",
+    "outDir": "./dist",
     "paths": {
       "@/*": [
         "src/*"
       ]
     },
-    "types": ["node", "jest"],
     "typeRoots": ["./node_modules/@types"],
 
     /* Emit */
@@ -38,10 +38,10 @@
     "skipLibCheck": true
   },
   "include": [
-    "src/**/*.ts",
-    "src/**/*.tsx",
-    "src/**/*.js",
-    "src/**/*.jsx",
+    "src/components/*.ts",
+    "src/hooks/*.ts",
+    "src/utils/*.ts",
+    "src/index.ts"
   ],
   "exclude": [
     "node_modules"

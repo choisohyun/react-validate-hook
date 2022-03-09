@@ -1,13 +1,32 @@
 {
-  "name": "my-react-boilerplate",
+  "name": "react-validate-input-component",
+  "description": "React validate hook",
+  "author": "choisohyun <sohyun4283@naver.com>",
   "version": "1.0.41",
   "license": "MIT",
+  "module": "dist/index.js",
+  "main": "dist/index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/choisohyun/react-validate-input-component.git"
+  },
+  "bugs": {
+    "url": "https://github.com/choisohyun/react-validate-input-component/issues"
+  },
+  "homepage": "https://github.com/choisohyun/react-validate-input-component#readme",
+  "publishConfig": {
+    "access": "public"
+  },
   "scripts": {
     "dev": "vite",
-    "prod": "vite build"
+    "prod": "vite build",
+    "build": "rm -rf dist && tsc",
+    "release": "standard-version"
+  },
+  "peerDependencies": {
+    "react": "^17.0.2"
   },
   "dependencies": {
-    "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-router-dom": "^6.2.1"
   },
@@ -36,6 +55,7 @@
     "postcss-nested": "^5.0.6",
     "prettier": "^2.4.1",
     "sass": "1.43.5",
+    "standard-version": "^9.3.2",
     "typescript": "^4.5.2",
     "vite": "^2.8.6",
     "vite-plugin-html": "^3.1.0",
