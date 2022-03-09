@@ -2,7 +2,7 @@
   "name": "react-validate-input-component",
   "description": "React validate hook",
   "author": "choisohyun <sohyun4283@naver.com>",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "license": "MIT",
   "module": "dist/index.js",
   "main": "dist/index.js",
